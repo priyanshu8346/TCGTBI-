@@ -5,51 +5,46 @@
 }
 
 .heading{
-  background-color:#466c2c;
+  background-color:#0d3501;
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-h2{
+h1{
 padding: 0;margin: 0;
 }
 .content{
   height: 80vh;
   width: 100vw;
-  /* background-color:#1E5128; */
   background-color: #dde7df;
 
 }
 .map{
    height: 100%;
   width: 100%;
-  background-image: url(../public/tcgtbimap.jpg);
-  background-size: contain;
-  background-position:center;
+  background-image: url(../public/miles-burke-idhx-MOCDSk-unsplash.jpg);
+  background-size:cover;
+  background-position:calc(100% - 0px) calc(100% - -138px);
   background-repeat: no-repeat;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 .container1 {
   display: flex;
   flex-flow: wrap;
   justify-content:space-evenly;
-  background-color: #1E5128;
+  background-color: #0d3501;
   align-items: center;
   width: 100%;
   height: 100%;
   position: relative;
 }
-.container {
-  margin-top: 8vh;
-  margin: auto;
-  height: 100%;
-  width: 100%;
-}
+
 .team {
-  background-color: rgb(188 208 219);
-  border: 2px solid blanchedalmond;
-  width: 20rem;
+  background-color: rgb(143, 236, 233);
+  border: 2px solid rgb(160, 241, 138);
+  width: 25rem;
   height: 15rem;
   margin: 2%;
   position: relative;
@@ -139,6 +134,11 @@ opacity: 0;
 
 
 /* responsive */
+@media screen and (max-width: 1100px) {
+  .map{
+    background-position: center;
+  }
+}
 @media screen and (max-width: 710px) {
   .content{
     height: 50vh;
